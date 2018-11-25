@@ -27,8 +27,9 @@ function Rocket(dna) {
 
     // Maps range of fitness
     this.fitness = map(d, 0, width, width, 0);
-    // If rocket gets to target increase fitness of rocket
+    // If rocket gets to target increase fitness of rocket and play completion noise
     if (this.completed) {
+      song.play(); 
       this.fitness *= 10;
     }
     // If rocket does not get to target decrease fitness
