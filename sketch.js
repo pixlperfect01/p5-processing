@@ -1,3 +1,5 @@
+var song;
+// Noise when target gets hit
 var population;
 // Each rocket is alive till 400 frames
 var lifespan = 400;
@@ -15,6 +17,10 @@ var rx = 100;
 var ry = 150;
 var rw = 200;
 var rh = 10;
+
+function preload() {
+  song = loadSound('Robot_blip-Marianne_Gagnon-120342607.mp3');
+}
 
 function setup() {
   createCanvas(400, 300);
