@@ -224,7 +224,7 @@ function writeShit(){
   noStroke();
   text(" \tPress P to play the game yourself \t\t\t\t\t\t\t\t Press G to replay evolution highlights",250,620 );
   text("Press SPACE to only show the best player", 450,680);
-  text(numberOfSteps, 1,680);
+  text(brain.step, 1,680);
   textSize(36);
   if(winCounter > 0){
 
